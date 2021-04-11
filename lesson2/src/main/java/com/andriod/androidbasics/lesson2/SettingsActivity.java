@@ -17,7 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         ImageButton buttonBack = findViewById(R.id.imageButtonBack);
         buttonBack.setOnClickListener(v -> {
-
+            this.finish();
         });
     }
 }
