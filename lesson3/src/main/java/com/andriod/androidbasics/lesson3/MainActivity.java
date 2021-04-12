@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -65,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(v.getContext(), "OnClick", Toast.LENGTH_SHORT).show();
             Log.d("Container", "OnClick");
         });
+
+        //receiving data from Activity @lesson2
+        Uri uri = getIntent().getData();
+        if (uri != null) {
+            String receivedText = uri.getLastPathSegment();
+            TextView textViewReceived = findViewById(R.id.textViewReceivedData);
+            textViewReceived.setText(receivedText);
+        }
 
         Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onCreate");

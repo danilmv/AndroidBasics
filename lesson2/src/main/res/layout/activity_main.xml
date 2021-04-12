@@ -11,10 +11,62 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Say Hello"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Data"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCallBrowser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hello" />
+
+    <Button
+        android:id="@+id/buttonCallBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call Browser"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFindActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/buttonFindActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCallBrowser" />
+
+    <EditText
+        android:id="@+id/editTextURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="http://google.com"
+        app:layout_constraintStart_toEndOf="@+id/buttonCallBrowser"
+        app:layout_constraintTop_toTopOf="@+id/buttonCallBrowser" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:text="123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/editText_myUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="myschema://myhost/some message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFindActivity" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -22,9 +74,9 @@
         android:layout_height="wrap_content"
         android:background="#2D46D1"
         android:src="@android:drawable/btn_star_big_on"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="@+id/button_hello"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_hello" />
 
