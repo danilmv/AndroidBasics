@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>Вирус</item>
+        <item>Человечек</item>
+        <item>Ключ</item>
+    </string-array>
+
+    <string-array name="drawables">
+        <item>@drawable/ic_baseline_coronavirus_24</item>
+        <item>@drawable/ic_action_name</item>
+        <item>@drawable/ic_baseline_build_24</item>
+    </string-array>
+</resources>
