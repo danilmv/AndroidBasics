@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.andriod.androidbasics.lesson6.data.City;
 import com.andriod.androidbasics.lesson6.data.Weather;
-
+//replaced with FragmentShowDetails
 public class ShowDetailsActivity extends AppCompatActivity {
 
     @Override
