@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lesson8</string>
+    <string name="cityName">City</string>
+    <string name="button_get">get</string>
+    <string name="temperature">Temperature:</string>
+    <string name="humidity">Humidity:</string>
+</resources>
